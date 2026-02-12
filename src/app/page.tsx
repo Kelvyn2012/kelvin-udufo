@@ -20,7 +20,7 @@ const projects = [
     tags: ["Go", "RabbitMQ", "Docker", "gRPC"],
     links: {
       github: "https://github.com/Kelvyn2012/alx-project-nexus",
-      demo: "https://social-media-feed-frontend-94ihzzmto-kelvyn2012s-projects.vercel.app/login",
+      demo: "https://social-media-feed-frontend-six.vercel.app/login",
     },
   },
   {
