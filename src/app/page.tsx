@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
 
 const projects = [
   {
@@ -69,17 +70,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-surface/30">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-3xl font-bold mb-8">About Me</h2>
-            <p className="text-lg text-secondary leading-relaxed mb-6">
-                I am a <strong>Software Engineer</strong> with a deep focus on Backend Architecture and Production Reliability. While my core strength lies in building robust APIs and scalable systems, I leverage <strong>AI-driven development</strong> to bridge the gap to the frontend.
-            </p>
-            <p className="text-lg text-secondary leading-relaxed">
-                 This approach allows me to deliver <strong>complete, polished applications</strong> independently—combining enterprise-grade backend logic with modern, high-fidelity user interfaces. I don't just write code; I engineer shipping products.
-            </p>
-        </div>
-      </section>
+      <About />
 
       <Footer />
     </main>
