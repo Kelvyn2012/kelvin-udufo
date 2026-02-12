@@ -9,6 +9,7 @@ const projects = [
     title: "Airbnb Clone Backend",
     description: "A robust booking API handling complex availability logic, payment processing, and user reviews. Built for scale with proper database indexing and caching strategies.",
     tags: ["Python", "Django", "PostgreSQL", "Redis", "Celery"],
+    image: "/images/projects/airbnb.png",
     links: {
       github: "https://github.com/Kelvyn2012/alx-airbnb-database",
       demo: "https://airbnb-green-eight-37.vercel.app/",
@@ -18,15 +19,17 @@ const projects = [
     title: "ALX Project Nexus",
     description: "High-throughput data aggregation service processing thousands of events per second. Implemented utilizing Go routines for concurrency and RabbitMQ for message queuing.",
     tags: ["Go", "RabbitMQ", "Docker", "gRPC"],
+    image: "/images/projects/nexus.png",
     links: {
       github: "https://github.com/Kelvyn2012/alx-project-nexus",
-      demo: "https://social-media-feed-frontend-six.vercel.app/login",
+      demo: "https://social-media-feed-frontend-six.vercel.app/",
     },
   },
   {
     title: "E-commerce API Engine",
     description: "Headless e-commerce backend supporting multi-tenant inventory management, tiered pricing, and real-time order tracking. Optimized for sub-100ms response times.",
     tags: ["FastAPI", "PostgreSQL", "AWS Lambda", "Stripe"],
+    image: "/images/projects/ecommerce.png",
     links: {
       github: "https://github.com/Kelvyn2012/e_commerce_API",
       demo: "https://ecommerce-nu-cyan-50.vercel.app/",
@@ -36,6 +39,7 @@ const projects = [
     title: "Movie Recommendation App",
     description: "Content-based filtering engine providing personalized movie suggestions. Features a hybrid recommendation algorithm and efficient caching for rapid lookups.",
     tags: ["Python", "Scikit-Learn", "FastAPI", "Redis"],
+    image: "/images/projects/movie.png",
     links: {
       github: "https://github.com/Kelvyn2012/Movie-Recommendation-App",
       demo: "https://movie-recommendation-app-frontend-nu.vercel.app/",
