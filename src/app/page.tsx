@@ -4,6 +4,7 @@ import Skills from "@/components/Skills";
 import ProjectCard from "@/components/ProjectCard";
 import Footer from "@/components/Footer";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 const projects = [
   {
@@ -71,6 +72,8 @@ export default function Home() {
       </section>
 
       <About />
+
+      <Contact />
 
       <Footer />
     </main>
