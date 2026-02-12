@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  /* Refined Colors to match Reference */
+  --color-background: #030014; /* Deep space blue/black */
+  --color-surface: rgba(17, 25, 40, 0.75); /* Glass surface */
+  --color-primary: #F3F4F6;
+  --color-secondary: #9CA3AF;
+  --color-accent: #8B5CF6; /* Violet accent from reference */
+  --color-border: rgba(255, 255, 255, 0.1);
+  
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 50s linear infinite;
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+:root {
+  --foreground-rgb: 243, 244, 246;
+  --background-start-rgb: 3, 0, 20;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: var(--color-primary);
+  background: var(--color-background);
+  font-family: var(--font-sans);
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  @apply antialiased overflow-x-hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* Utility classes */
+/* In v4, we can just use the utility classes directly, but for custom components: */
+.glass-panel {
+  @apply bg-slate-900/40 backdrop-blur-md border border-slate-700/30;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400;
+}
