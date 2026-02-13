@@ -17,7 +17,7 @@ export default function ResumePage() {
           
           <a 
             href="/resume.pdf" 
-            download="Kelvin_Udufo_Resume.pdf"
+            download="Kelvin_Udufo_Resume_2026.pdf"
             className="flex items-center gap-2 px-6 py-2.5 bg-accent text-white rounded-full font-medium hover:bg-accent/90 transition-colors shadow-lg shadow-accent/20"
           >
             <Download size={18} />
@@ -53,7 +53,7 @@ export default function ResumePage() {
                     </p>
                     <a 
                         href="/resume.pdf" 
-                        download="Kelvin_Udufo_Resume.pdf"
+                        download="Kelvin_Udufo_Resume_2026.pdf"
                         className="flex items-center gap-2 px-8 py-3 bg-white/10 text-white rounded-full font-medium hover:bg-white/20 transition-colors border border-white/10"
                     >
                         <Download size={20} />
